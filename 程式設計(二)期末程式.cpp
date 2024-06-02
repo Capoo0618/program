@@ -121,7 +121,7 @@ void gamefinish(vector<player> &playerlist){
     }
     for(j=0;draw[j]!=0;j++){
        for(int jj=0;jj<playerlist.size();jj++){
-            if(wwin[j]==playerlist[jj].order)
+            if(draw[j]==playerlist[jj].order)
             playerlist[jj].countscore(1);
         }
     }
